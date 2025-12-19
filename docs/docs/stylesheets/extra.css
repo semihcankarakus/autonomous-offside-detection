@@ -1,0 +1,123 @@
+/* Profesyonel Tema Özelleştirmeleri */
+
+:root {
+  --md-primary-fg-color: #6200EA;
+  --md-accent-fg-color: #FFD600;
+}
+
+/* Hero Section Stili */
+.hero {
+  padding: 2rem;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border-radius: 12px;
+  margin-bottom: 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  background: linear-gradient(90deg, #00d9ff, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+
+/* Kod Bloğu İyileştirmeleri */
+.highlight {
+  border-radius: 8px;
+}
+
+.md-typeset code {
+  font-size: 0.85em;
+}
+
+/* Tablo Stili */
+.md-typeset table:not([class]) {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.md-typeset table:not([class]) th {
+  background: var(--md-primary-fg-color);
+  color: white;
+}
+
+/* Admonition Özelleştirmeleri */
+.md-typeset .admonition.professional,
+.md-typeset details.professional {
+  border-color: #6200EA;
+}
+
+.md-typeset .professional > .admonition-title,
+.md-typeset .professional > summary {
+  background-color: rgba(98, 0, 234, 0.1);
+}
+
+/* Mermaid Diyagram Stili */
+.mermaid {
+  background: transparent !important;
+}
+
+/* Matematiksel Formül Vurgusu */
+.arithmatex {
+  overflow-x: auto;
+  padding: 0.5rem;
+}
+
+/* Feature Cards */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.feature-card {
+  padding: 1.5rem;
+  background: var(--md-code-bg-color);
+  border-radius: 12px;
+  border-left: 4px solid var(--md-accent-fg-color);
+  transition: transform 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+}
+
+.feature-card h3 {
+  margin-top: 0;
+  color: var(--md-accent-fg-color);
+}
+
+/* Stat Badge */
+.stat-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: var(--md-primary-fg-color);
+  color: white;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* Timeline Stili */
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+  border-left: 2px solid var(--md-primary-fg-color);
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 1.5rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -2.35rem;
+  width: 12px;
+  height: 12px;
+  background: var(--md-accent-fg-color);
+  border-radius: 50%;
+}

@@ -1,0 +1,106 @@
+site_name: Otonom VAR - Ofsayt Tespit Sistemi
+site_description: Yapay Zeka Destekli Gerçek Zamanlı Ofsayt Analizi
+site_author: Autonomous VAR Project
+site_url: https://autonomous-var.github.io
+docs_dir: docs/docs
+
+theme:
+  name: material
+  language: tr
+  palette:
+    - scheme: slate
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-4
+        name: Açık temaya geç
+    - scheme: default
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/brightness-7
+        name: Koyu temaya geç
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - content.code.copy
+    - content.code.annotate
+    - toc.follow
+  icon:
+    logo: material/soccer
+    repo: fontawesome/brands/github
+
+plugins:
+  - search:
+      lang: tr
+  - glightbox  # Görsel lightbox için
+
+markdown_extensions:
+  # Matematik (LaTeX) Desteği
+  - pymdownx.arithmatex:
+      generic: true
+  # Kod Bloğu Geliştirmeleri
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  # Ek Özellikler
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - def_list
+  - toc:
+      permalink: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - stylesheets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/autonomous-var
+
+nav:
+  - Ana Sayfa: index.md
+  - Sistem Mimarisi:
+    - Genel Bakış: architecture/overview.md
+    - Modül Yapısı: architecture/modules.md
+    - Model Performans Analizi: architecture/performance.md
+  - Computer Vision:
+    - YOLOv8 Pipeline: cv/yolo-pipeline.md
+    - Model Eğitimi: cv/model-training.md
+  - Geometri & Homografi:
+    - Perspektif Dönüşümü: geometry/homography.md
+    - Koordinat Sistemleri: geometry/coordinates.md
+  - Takım Sınıflandırma:
+    - SigLIP Embeddings: classification/siglip.md
+    - UMAP & K-Means: classification/clustering.md
+  - Vuruş Algılama:
+    - Kinematik Analiz: kick/kinematics.md
+    - Temporal Filtering: kick/temporal.md
