@@ -660,6 +660,3 @@ Sistem çalışma videosuna burdan erişebilirsiniz:
 **https://drive.google.com/file/d/1O5CNNLtgjkdIdxL6mC3r1SiafPMLK43M/view?usp=sharing**
 
 ---
-
-*Rapor Tarihi: 19 Aralık 2024*
-*Versiyon: 1.0*
