@@ -10,8 +10,8 @@
 
 | İsim | Görevler | Katkı Alanları |
 |------|----------|----------------|
-| **Semih Can Karakuş** | Proje Lideri & Ana Geliştirici | Sistem mimarisi tasarımı, YOLOv8 model eğitimi ve fine-tuning, Homografi motoru geliştirme (geometry.py), SigLIP tabanlı takım sınıflandırma algoritması, Vuruş algılama kinematik analizi, Ana orkestrasyon sınıfı (main.py), End-to-end entegrasyon ve test, GitHub Pages dokümantasyon altyapısı |
-| **Furkan Kayra Aytuğ** | Veri Mühendisi & Model Optimizasyonu | Roboflow veri setlerinin hazırlanması ve ön işleme, Data augmentation stratejilerinin belirlenmesi, Model performans analizi ve metrik değerlendirme, ByteTrack entegrasyonu ve oyuncu takibi, Inference pipeline optimizasyonu (inference.py) |
+| **Semih Can Karakuş** | Sistem Mühendisliği | Sistem mimarisi tasarımı, Homografi motoru geliştirme, SigLIP tabanlı takım sınıflandırma algoritması, Vuruş algılama kinematik analizi, Ana orkestrasyon sınıfı, End-to-end entegrasyon ve test, ByteTrack entegrasyonu ve oyuncu takibi, Inference pipeline optimizasyonu|
+| **Furkan Kayra Aytuğ** | Veri Mühendisi & Model Optimizasyonu | Roboflow veri setlerinin hazırlanması ve ön işleme, YOLOv8 model eğitimi ve fine-tuning, Data augmentation stratejilerinin belirlenmesi, Model performans analizi ve metrik değerlendirme |
 | **Buğra Doyranlı** | Test & Dokümantasyon | Video test senaryolarının hazırlanması, Sistem çıktılarının görsel doğrulaması, Proje raporunun düzenlenmesi, Demo video hazırlama, Literatür taraması desteği |
 
 ---
